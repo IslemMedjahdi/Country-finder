@@ -1,6 +1,5 @@
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
 import "./App.css";
 import Countrypage from "./components/CountryPage";
 import Home from "./components/Home";
