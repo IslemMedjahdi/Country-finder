@@ -27,5 +27,8 @@
 
 
 ### What is Country finder : 
-Country finder: A site that allows you to browse the countries of the world with all the necessary information about the country
+	- A site that allows you to browse the countries of the world 
+		with all the necessary information about the country.
+	- You can search a country by name,capital,region,native name.
+	- A good UI design with light and dark theme
 
