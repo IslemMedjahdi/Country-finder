@@ -1,7 +1,7 @@
-﻿# ESMS12 APS Website
+﻿# Country Finder
 
 ### Live Preview :  
-**[APS: Art of Problem Solving](https://aps-esms12.netlify.app/)**
+**[Country finder](https://country-finder-medjahdi.netlify.app/)**
 
 ### tools : 
 	- ReactJS
@@ -26,6 +26,9 @@
 	- API : https://restcountries.com/v2/all
 
 
-### What is APS : 
-Country finder: A site that allows you to browse the countries of the world with all the necessary information about the country
+### What is Country finder : 
+	- A site that allows you to browse the countries of the world 
+		with all the necessary information about the country.
+	- You can search a country by name,capital,region,native name.
+	- A good UI design with light and dark theme
 
