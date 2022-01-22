@@ -16,6 +16,7 @@ const Countrieslist = ({ countries, page, loading, error, tryAgain }) => {
                   population={country.population.toLocaleString("en")}
                   region={country.region}
                   capital={country.capital || "No capital"}
+                  alpha3Code={country.alpha3Code}
                 />
               );
             })

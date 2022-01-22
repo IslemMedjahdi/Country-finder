@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Country = ({flag,name,population,region,capital}) => {
+const Country = ({flag,name,population,region,capital,alpha3Code}) => {
   let navigate = useNavigate();
   return (
-    <div onClick={() => navigate(name.replace(/\s/g, ''))} className="bg-white rounded-md overflow-hidden cursor-pointer hover:scale-x-[1.02] hover:scale-y-[1.02] transition dark:bg-darkelem dark:text-white text-gray-900 shadow-md">
+    <div onClick={() => navigate(alpha3Code)} className="bg-white rounded-md overflow-hidden cursor-pointer hover:scale-x-[1.02] hover:scale-y-[1.02] transition dark:bg-darkelem dark:text-white text-gray-900 shadow-md">
       <div>
         <img className="w-full h-40 object-cover" src={flag} alt={name} />
       </div>

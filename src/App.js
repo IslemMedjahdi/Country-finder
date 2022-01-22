@@ -1,9 +1,9 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Countrypage from "./components/CountryPage";
 import Home from "./components/Home";
-import Header from './components/Header'
+import Header from "./components/Header";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -24,7 +24,7 @@ function App() {
       setLoading(false);
       setError(true);
     }
-  }; 
+  };
   useEffect(() => {
     fetchData();
     if (localStorage.getItem("theme")) {
@@ -38,26 +38,32 @@ function App() {
   }, [theme]);
   return (
     <div className={`App  ${theme ? "dark" : ""}`}>
-        <div className="dark:bg-darkbg min-h-screen scroll-smooth transition duration-300 bg-lightbg">
-      <Router>
-      <Header theme={theme} toggleTheme={() => setTheme((theme) => !theme)} />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Home
-                error={error}
-                countries={countries}
-                loading={loading}
-                theme={theme}
-                setTheme={setTheme}
-                tryAgain={fetchData}
-              />
-            }
+      <div className="dark:bg-darkbg min-h-screen scroll-smooth transition duration-300 bg-lightbg">
+        <Router>
+          <Header
+            theme={theme}
+            toggleTheme={() => setTheme((theme) => !theme)}
           />
-          <Route path="/:countryName" element={<Countrypage loading={loading} countries={countries}/>}/>
-        </Routes>
-      </Router>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Home
+                  error={error}
+                  countries={countries}
+                  loading={loading}
+                  theme={theme}
+                  setTheme={setTheme}
+                  tryAgain={fetchData}
+                />
+              }
+            />
+            <Route
+              path="/:countryName"
+              element={<Countrypage loading={loading} countries={countries} />}
+            />
+          </Routes>
+        </Router>
       </div>
     </div>
   );

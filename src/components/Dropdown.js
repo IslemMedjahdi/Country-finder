@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const Dropdown = React.memo(({ region, setRegion }) => {
-  console.log("render dropdown");
   const [isOpen, setOpen] = useState(false);
   const buttonRef = useRef();
   const handleClickOutside = (e) => {

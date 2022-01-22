@@ -5,7 +5,7 @@ const Countrypage = ({ countries, loading }) => {
   let { countryName } = useParams();
   let navigate = useNavigate();
   let country = countries.find((item) => {
-    return item.name.replace(/\s/g, "") === countryName;
+    return item.alpha3Code === countryName;
   });
   return (
     <div className="mt-4  px-12 py-8">
@@ -103,13 +103,14 @@ const Countrypage = ({ countries, loading }) => {
                   let bCountry = countries.find((count) => {
                     return count.alpha3Code === border;
                   });
+                  if (!bCountry) return <span key={-1}></span>;
                   return (
                     <p
                       onClick={() =>
-                        navigate(`/${bCountry.name.replace(/\s/g, "")}`)
+                        navigate(`/${bCountry.alpha3Code}`)
                       }
                       className="dark:bg-darkelem hover:opacity-80 font-light cursor-pointer mr-4 mb-2 bg-white rounded-md px-3 py-1"
-                      key={bCountry.name}
+                      key={bCountry.alpha3Code}
                     >
                       {bCountry.name}
                     </p>
