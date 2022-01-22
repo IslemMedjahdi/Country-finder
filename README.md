@@ -1,7 +1,7 @@
 ﻿# ESMS12 APS Website
 
 ### Live Preview :  
-**[APS: Art of Problem Solving](https://country-finder-medjahdi.netlify.app/)**
+**[APS: Art of Problem Solving](https://aps-esms12.netlify.app/)**
 
 ### tools : 
 	- ReactJS
@@ -26,6 +26,6 @@
 	- API : https://restcountries.com/v2/all
 
 
-### What is APS : 
+### What is Country finder : 
 Country finder: A site that allows you to browse the countries of the world with all the necessary information about the country
 
