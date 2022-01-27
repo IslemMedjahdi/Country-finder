@@ -32,7 +32,7 @@ const Countrypage = ({ countries, loading }) => {
           <div className="mt-10 space-y-10 md:space-y-0 gap-6 md:grid grid-cols-2 items-center">
             <div className="flex items-center justify-center">
               <img
-                className="w-[26rem] shadow-md h-64 object-cover"
+                className="w-[26rem] shadow-xl object-contain"
                 src={country.flag}
                 alt={country.name}
               />
