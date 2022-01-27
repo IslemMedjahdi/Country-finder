@@ -3,7 +3,7 @@
 ### Live Preview :  
 **[Country finder](https://country-finder-medjahdi.netlify.app/)**
 
-### tools : 
+### Built With : 
 	- ReactJS
 	- TailwindCSS
 
